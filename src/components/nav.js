@@ -11,7 +11,7 @@ import '../pages/contact';
 export default function Nav() {
     return (
       <nav>
-        <Link className='home header-link' to='/about'>Kristin Van Ogtrop</Link>
+        <Link className='home logo' to='/about'>Kristin Van Ogtrop</Link>
         <div className="header-links-container">
           <Link to="/about" className="header-link">About</Link>
           <Link to="/books" className="header-link">Books</Link>
