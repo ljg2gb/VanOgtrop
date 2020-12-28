@@ -136,7 +136,16 @@ nav, footer {
     display: flex;
     align-items: center;
     color: #648AB5;
+}
 
+.header-links-container {
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+        
 }
 
 .header-link {
