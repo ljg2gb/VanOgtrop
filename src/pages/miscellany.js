@@ -10,7 +10,7 @@ export default function Miscellany() {
         <div className='main'>
             <h1>MISCELLANY</h1>
             <div className= 'page-content'>
-                <div className='text-content'>
+                <div className='text-content-left'>
                     <h3>A random sampling of things I’ve written over the years.</h3>
                     <br/>
                     <p><a href='https://github.com/ljg2gb/Candle' target="_blank" rel="noreferrer">The Difference Between Men and Women, a.k.a. The “Lice Epidemic”</a></p>
@@ -61,7 +61,7 @@ export default function Miscellany() {
                     <p><a href='https://github.com/ljg2gb/Candle' target="_blank" rel="noreferrer">Head Case</a></p>
                     <p>Vogue</p>
                </div>
-                <div className='media-box'>
+                <div className='media-content-right'>
                     <img src={Waffle} alt="Pureed hospital waffle molded back to a waffle"></img>
                     <caption>Do you think this is a waffle?  Ha!  It’s what a hospital kitchen sends to try to cheer you up, or maybe trick you, when you can only eat pureed food.  See my second book for details.</caption>
                 </div>

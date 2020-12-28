@@ -10,7 +10,7 @@ export default function Press() {
         <div className='main'>
             <h1>PRESS</h1>
             <div className= 'page-content'>
-                <div className='text-content'>
+                <div className='text-content-left'>
                     <p><a href='https://github.com/ljg2gb/Candle' target="_blank" rel="noreferrer">Midlife Moms</a></p>
                     <p>Chicago Tribune</p>
                     <br/>
@@ -35,7 +35,7 @@ export default function Press() {
                     <p><a href='https://github.com/ljg2gb/Candle' target="_blank" rel="noreferrer">Outdoor Entertaining Made Simple</a></p>
                     <p>Virginia Magazine</p>
                </div>
-                <div className='media-box'>
+                <div className='media-content-right'>
                     <img src={Ina} alt="Sitting with the Barefoot Contessa"></img>
                     <caption>One time when I was the editor in chief of Real Simple I got to sit next to Ina Garten at a fancy dinner which means I can now die happy!</caption>
                 </div>
