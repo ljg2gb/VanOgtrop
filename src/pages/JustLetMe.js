@@ -4,7 +4,7 @@ import Nav from '../components/nav';
 import Footer from '../components/footer';
 import JustLetMe from '../../assets/JustLetMe.jpg'
 
-export default function JustLetMe() {
+export default function JustLetMeLieDown() {
   return (
     <div>
       <Nav/>
