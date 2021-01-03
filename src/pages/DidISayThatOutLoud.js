@@ -2,18 +2,18 @@ import React from "react";
 import { Link } from "gatsby";
 import Nav from '../components/nav';
 import Footer from '../components/footer';
-import JustLetMe from '../../assets/JustLetMe.jpg'
+import DidISayThat from '../../assets/DidISayThatOutloud.jpg'
 
 export default function DidISayThatOutLoud() {
   return (
     <div>
       <Nav/>
         <div className='main'>
-            <h1>Book</h1>
+            <h1>Did I Say That Out Loud?</h1>
             <div className="page-content">
               <div className='media-content-left'>
                 <Link to="/book" className="book">
-                    <img src={JustLetMe} alt="Book cover: Just Let Me Lie Down"></img>
+                    <img src={DidISayThat} alt="Book cover: Did I Say That Out Loud?"></img>
                 </Link>
               </div>
               <div className='text-content-right'>
@@ -27,9 +27,8 @@ export default function DidISayThatOutLoud() {
                   <button>Walmart</button>
                 </div>
                 <br/>
-                <h3><i>“A hysterical and touching handbook for frantic working moms.”</i> — Self magazine</h3>
-                <h3 className="mb-1"><i>“A witty lexicon of marriage and motherhood.”</i> — Vogue</h3>
-                <p>Kristin van Ogtrop knows she’s lucky-fulfilling career, great husband, three healthy kids, and, depending on the hamster count, an impressive roster of pets. You could also say she’s half-insane, but name one working mom who isn’t.  Using stories and insights from her own life, van Ogtrop offers a lexicon for working moms everywhere. Terms and concepts illustrate the highs (kids who know where their soccer cleats are, coworkers who don’t hit “Reply All,” dogs who helpfully eat whatever falls from the table) and the lows (getting out of the house in the morning, getting along with everyone at the office, getting willful kids into bed) of balancing work and family.</p>
+                <h3><i>“Full of humor, heart, and humility, Kristin van Ogtrop’s essays capture the mantra of the first piece in this perfect collection of meditations on middle age: Just happy to be here. I loved this book.” —Laura Zigman, author of </i><span> </span> Separation Anxiety</h3>
+                <p>Do you hate the term “middle age?” So does Kristin van Ogtrop, who is still trying to come up with a less annoying way to describe those years when you find yourself both satisfied and outraged, confident and confused, full of appreciation but occasional disdain for the world around you. Like an intimate chat with your best friend, this mostly funny, sometimes sad, always affirming volume is a celebration of that period of life when mild humiliations are significantly outweighed by a self-actualized triumph of the spirit. Finally!  Featuring stories from her own life, as well as anecdotes from her unwitting friends and family, van Ogtrop encourages you to laugh at the small irritations of midlife: neglectful children, stealth insomnia, forks that try to kill you, t.v. remotes that won’t find Netflix, abdominal muscles that can’t seem to get the job done. But also to acknowledge the things you may have lost:  innocence, unbridled optimism, smooth skin. Dear friends. Parents. It’s all here: the sublime and the ridiculous, living together in the pages of this book as they do in your heart, like a big messy family, in this no-better-term-for-it middle age.</p>
               </div>  
             </div>
         </div>

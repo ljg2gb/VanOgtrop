@@ -9,7 +9,7 @@ export default function JustLetMeLieDown() {
     <div>
       <Nav/>
         <div className='main'>
-            <h1>Book</h1>
+            <h1>Just Let Me Lie Down</h1>
             <div className="page-content">
               <div className='media-content-left'>
                 <Link to="/book" className="book">

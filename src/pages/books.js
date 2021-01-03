@@ -10,13 +10,13 @@ export default function Books() {
     <div>
         <Nav/>
         <div className='main'>
-            <h1>Books</h1>
+            <h1>BOOKS</h1>
             <div className="page-content vertical-center">
             <div className='media-content-left book-covers'>
-                <Link to="/book" className="book-cover">
+                <Link to="/JustLetMe" className="book-cover">
                     <img src={JustLetMe} alt="Book cover: Just Let Me Lie Down"></img>
                 </Link>
-                <Link to="/book" className="book-cover">
+                <Link to="/DidISayThatOutLoud" className="book-cover">
                     <img src={DidISayThatOutloud} alt="Book cover: Did I Say That Outloud?"></img>
                 </Link>
             </div>
