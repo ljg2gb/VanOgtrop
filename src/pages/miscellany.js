@@ -11,7 +11,7 @@ export default function Miscellany() {
             <h1>MISCELLANY</h1>
             <div className= 'page-content'>
                 <div className='text-content-left'>
-                    <h3><i>Random stuff, written by me</i></h3>
+                    <h3><i>Random stuff, written by me:</i></h3>
                     <br/>
                     <p><a href='https://www.realsimple.com/work-life/life-strategies/difference-between-men-women-lice-epidemic' target="_blank" rel="noreferrer">The Difference Between Men and Women, a.k.a. The “Lice Epidemic”</a></p>
                     <p><i>Real Simple</i></p>

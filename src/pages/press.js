@@ -11,7 +11,7 @@ export default function Press() {
             <h1>PRESS</h1>
             <div className= 'page-content'>
                 <div className='text-content-left'>
-                    <h3><i>Random stuff, written by me</i></h3>
+                    <h3><i>Random stuff, written about me:</i></h3>
                     <br/>
                     <p><a href='https://www.chicagotribune.com/lifestyles/ct-xpm-2010-05-06-sc-fam-0506-midlife-mom-20100506-story.html' target="_blank" rel="noreferrer">Midlife Moms</a></p>
                     <p><i>Chicago Tribune</i></p>

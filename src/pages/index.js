@@ -1,33 +1,111 @@
 import React from "react";
+import { Link } from 'gatsby';
 import '../styles/index.sass';
 import "fontsource-eb-garamond";
-import Nav from "../components/nav";
+// import About from './about';
+// import Nav from "../components/nav";
 import Footer from "../components/footer";
-import schoolPhoto from '../../assets/KvO_school_photo.jpeg';
+// import schoolPhoto from '../../assets/KvO_school_photo.jpeg';
+import Geanie1 from '../../assets/Kristin_llustrations_v2-11.png';
+import Geanie2 from '../../assets/Kristin_llustrations_v2-06.png';
+
+import Typewriter1 from '../../assets/Kristin_llustrations_v2-09.png';
+import Typewriter2 from '../../assets/Kristin_llustrations_v2-04.png';
+
+import Drawer1 from '../../assets/Kristin_llustrations_v2-10.png';
+import Drawer2 from '../../assets/Kristin_llustrations_v2-05.png';
+
+import Dog1 from '../../assets/Kristin_llustrations_v2-12.png';
+import Dog2 from '../../assets/Kristin_llustrations_v2-07.png';
+
+import Party1 from '../../assets/Kristin_llustrations_v2-13.png';
+import Party2 from '../../assets/Kristin_llustrations_v2-02.png';
+
+import Pigeon1 from '../../assets/Pigeon1.png';
+import Pigeon2 from '../../assets/Pigeon2.png';
 
 // data
 
 // markup
 export default function Index() {
+
   return (
-    <div>
-      <Nav/>
-        <div className='main'>
-            <h1>ABOUT</h1>
-            <div className= 'page-content'>
-                <div className='text-content-left'>
-                    <h3>Officially, as in careerish stuff:</h3>
-                    <p>After getting my B.A. in English from the University of Virginia and my M.A. in English from Columbia University, I began working in magazines as an assistant to the managing editor of Vogue.  I subsequently worked at Premiere, Travel & Leisure, Vogue (again) and Glamour. In 2003, I was named editor in chief of Real Simple, a job I held until 2016.  Along the way I wrote for various publications, contributed essays to the books Child of Mine and The Bitch in the House, wrote The Amateur column for Time and the book Just Let Me Lie Down:  Necessary Terms for the Half-Insane Working Mom.  In 2018, I began a new career as a literary agent at InkWell Management.</p>
-                    <br/>
-                    <h3>Unofficially:</h3>
-                    <p>I grew up in Delaware and sort of wish I still lived there.  I am allergic to penicillin.  I never had any wisdom teeth.  If I could only eat one food for the rest of my life, it would be potato chips.  Or maybe french fries.  Hopefully I’ll never have to choose.</p>
-                </div>
-                <div className='media-content-right'>
-                    <img src={schoolPhoto} alt='school photo of Kristin van Ogtrop'></img>
-                </div>
-            </div>
-        </div>
-        <Footer/>
+    <div >
+      <div className="home-images">
+        <Link to="/about" className="home-image">
+          <img 
+            src={Geanie1} 
+            alt="About"
+            onMouseOver={e => (e.currentTarget.src = Geanie2)}
+            onMouseEnter={e => (e.currentTarget.src = Geanie2)}
+            onFocus={e => (e.currentTarget.src = Geanie2)}
+            onMouseOut={e => (e.currentTarget.src = Geanie1)}
+            onBlur={e => (e.currentTarget.src = Geanie1)}
+          />
+        </Link>
+
+        <Link to="/books" className="home-image">
+          <img 
+            src={Typewriter1} 
+            alt="Books"
+            onMouseOver={e => (e.currentTarget.src = Typewriter2)}
+            onMouseEnter={e => (e.currentTarget.src = Typewriter2)}
+            onFocus={e => (e.currentTarget.src = Typewriter2)}
+            onMouseOut={e => (e.currentTarget.src = Typewriter1)}
+            onBlur={e => (e.currentTarget.src = Typewriter1)}
+          />
+        </Link>
+
+        <Link to="/miscellany" className="home-image">
+          <img 
+            src={Drawer1} 
+            alt="Miscellany"
+            onMouseOver={e => (e.currentTarget.src = Drawer2)}
+            onMouseEnter={e => (e.currentTarget.src = Drawer2)}
+            onFocus={e => (e.currentTarget.src = Drawer2)}
+            onMouseOut={e => (e.currentTarget.src = Drawer1)}
+            onBlur={e => (e.currentTarget.src = Drawer1)}
+          />
+        </Link>
+
+        <Link to="/press" className="home-image">
+          <img 
+            src={Dog1} 
+            alt="Press"
+            onMouseOver={e => (e.currentTarget.src = Dog2)}
+            onMouseEnter={e => (e.currentTarget.src = Dog2)}
+            onFocus={e => (e.currentTarget.src = Dog2)}
+            onMouseOut={e => (e.currentTarget.src = Dog1)}
+            onBlur={e => (e.currentTarget.src = Dog1)}
+          />
+        </Link>
+
+        <Link to="/events" className="home-image">
+          <img 
+            src={Party1} 
+            alt="Events"
+            onMouseOver={e => (e.currentTarget.src = Party2)}
+            onMouseEnter={e => (e.currentTarget.src = Party2)}
+            onFocus={e => (e.currentTarget.src = Party2)}
+            onMouseOut={e => (e.currentTarget.src = Party1)}
+            onBlur={e => (e.currentTarget.src = Party1)}
+          />
+        </Link>
+
+        <Link to="/contact" className="home-image">
+          <img 
+            src={Pigeon1} 
+            alt="Contact"
+            onMouseOver={e => (e.currentTarget.src = Pigeon2)}
+            onMouseEnter={e => (e.currentTarget.src = Pigeon2)}
+            onFocus={e => (e.currentTarget.src = Pigeon2)}
+            onMouseOut={e => (e.currentTarget.src = Pigeon1)}
+            onBlur={e => (e.currentTarget.src = Pigeon1)}
+          />
+        </Link>
+      </div>
+      <h1 className="home-header">Kristin van Ogtrop</h1>
+      <Footer/>
     </div>
   )
 }

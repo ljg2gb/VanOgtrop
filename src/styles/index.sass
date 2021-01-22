@@ -51,6 +51,31 @@ nav, footer {
     margin-bottom: 1em;
 }
 
+.home-header {
+    font-weight: 20000px;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 4em;
+}
+
+.home-images {
+    display: flex;
+    padding: 8em 10% 0 10%;
+    align-self: center;
+    @media (max-width: 600px) {
+        padding: 2em 2em;
+    }
+}
+
+.home-image {
+    max-width: 220px;
+    margin: 0 .7em;
+    img {
+        width: 100%;
+        object-fit: fill;
+    }
+}
+
 .main {
     background-color: #F5F5F5;
     padding: 4em 15%;
