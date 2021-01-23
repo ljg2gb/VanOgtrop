@@ -11,9 +11,9 @@ export default function Events() {
             <h1>EVENTS</h1>
             <div className= 'page-content'>
                 <div className='text-content-left'>
-                    <p>No upcoming events. Follow me on  
-                        <a href='https://www.facebook.com/kristinvanogtroprealsimple'>Facebook</a>,  
-                        <a href='https://www.instagram.com/kvanogtrop/'>Instagram</a>, or  
+                    <p>No upcoming events. Follow me on&nbsp;  
+                        <a href='https://www.facebook.com/kristinvanogtroprealsimple'>Facebook</a>,&nbsp;  
+                        <a href='https://www.instagram.com/kvanogtrop/'>Instagram</a>, or&nbsp;  
                         <a href='https://twitter.com/kvanogtrop'>Twitter</a> for the latest happenings.</p>
                </div>
                 <div className='media-content-right'>

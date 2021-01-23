@@ -14,10 +14,10 @@ export default function Books() {
             <div className="page-content vertical-center">
             <div className='media-content-left book-covers'>
                 <Link to="/JustLetMe" className="book-cover">
-                    <img src={JustLetMe} alt="Book cover: Just Let Me Lie Down"></img>
+                    <img src={JustLetMe} alt="Book cover: Just Let Me Lie Down" className="book-hover"></img>
                 </Link>
                 <Link to="/DidISayThatOutLoud" className="book-cover">
-                    <img src={DidISayThatOutloud} alt="Book cover: Did I Say That Outloud?"></img>
+                    <img src={DidISayThatOutloud} alt="Book cover: Did I Say That Outloud?" className="book-hover"></img>
                 </Link>
             </div>
             <div className='text-content-right'>

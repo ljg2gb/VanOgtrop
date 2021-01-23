@@ -2,33 +2,27 @@ import React from "react";
 import { Link } from 'gatsby';
 import '../styles/index.sass';
 import "fontsource-eb-garamond";
-// import About from './about';
-// import Nav from "../components/nav";
 import Footer from "../components/footer";
-// import schoolPhoto from '../../assets/KvO_school_photo.jpeg';
-import Geanie1 from '../../assets/Kristin_llustrations_v2-11.png';
-import Geanie2 from '../../assets/Kristin_llustrations_v2-06.png';
 
-import Typewriter1 from '../../assets/Kristin_llustrations_v2-09.png';
-import Typewriter2 from '../../assets/Kristin_llustrations_v2-04.png';
+import Geanie1 from '../../assets/final_bw_illustrations/Porter_KvO_About_closed.png';
+import Geanie2 from '../../assets/final_bw_illustrations/Porter_KvO_About_open.png';
 
-import Drawer1 from '../../assets/Kristin_llustrations_v2-10.png';
-import Drawer2 from '../../assets/Kristin_llustrations_v2-05.png';
+import Typewriter1 from '../../assets/final_bw_illustrations/Porter_KvO_Books_closed.png';
+import Typewriter2 from '../../assets/final_bw_illustrations/Porter_KvO_Books_open.png';
 
-import Dog1 from '../../assets/Kristin_llustrations_v2-12.png';
-import Dog2 from '../../assets/Kristin_llustrations_v2-07.png';
+import Drawer1 from '../../assets/final_bw_illustrations/Porter_KvO_Miscellany_closed.png';
+import Drawer2 from '../../assets/final_bw_illustrations/Porter_KvO_Miscellany_open.png';
 
-import Party1 from '../../assets/Kristin_llustrations_v2-13.png';
-import Party2 from '../../assets/Kristin_llustrations_v2-02.png';
+import Dog1 from '../../assets/final_bw_illustrations/Porter_KvO_Press_closed.png';
+import Dog2 from '../../assets/final_bw_illustrations/Porter_KvO_Press_open.png';
 
-import Pigeon1 from '../../assets/Pigeon1.png';
-import Pigeon2 from '../../assets/Pigeon2.png';
+import Party1 from '../../assets/final_bw_illustrations/Porter_KvO_Events_closed.png';
+import Party2 from '../../assets/final_bw_illustrations/Porter_KvO_Events_open.png';
 
-// data
+import Pigeon1 from '../../assets/final_bw_illustrations/Porter_KvO_contact_closed.png';
+import Pigeon2 from '../../assets/final_bw_illustrations/Porter_KvO_Contact_open.png';
 
-// markup
 export default function Index() {
-
   return (
     <div >
       <div className="home-images">
@@ -104,7 +98,9 @@ export default function Index() {
           />
         </Link>
       </div>
-      <h1 className="home-header">Kristin van Ogtrop</h1>
+      <Link to="/about" className="home-title">
+        <h1 className="home-header">Kristin van Ogtrop</h1>
+      </Link>
       <Footer/>
     </div>
   )

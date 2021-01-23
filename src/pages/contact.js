@@ -11,7 +11,7 @@ export default function Contact() {
             <h1>CONTACT</h1>
             <div className="page-content">
                 <div className='text-content-left'>
-                    <p>Send a message to me at <u>hellokvo@gmail.com</u>, even if it’s just to tell me your favorite color.</p>
+                    <p>Send a message to me at <a href="mailto:hellokvo@gmail.com" target="_blank" rel="noreferrer">hellokvo@gmail.com</a>, even if it’s just to tell me your favorite color.</p>
                 </div>
                 <div className='media-content-right'>
                     <img src={Wagon} alt='childhood photo of Kristin van Ogtrop in wagon'></img>

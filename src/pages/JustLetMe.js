@@ -17,7 +17,7 @@ export default function JustLetMeLieDown() {
                 </Link>
               </div>
               <div className='text-content-right'>
-                <h2>PURCHASE NOW</h2>
+                <h2>Purchase Now</h2>
                 <div>
                   <button>Northshire Books</button>
                   <button>IndieBound</button>
