@@ -13,6 +13,7 @@ export default function Nav() {
       <nav>
         <Link className='home logo' to='/'>Kristin van Ogtrop</Link>
         <div className="header-links-container">
+          <div className="header-links-sub-container">
           <Link to="/about" 
             className="header-link"
             activeStyle={{
@@ -31,24 +32,27 @@ export default function Nav() {
               color: "#e9d14d"
             }}
             >Miscellany</Link>
-          <Link to="/press" 
-            className="header-link" 
-            activeStyle={{
-              color: "#e9d14d"
-            }}
-          >Press</Link>
-          <Link to="/events" 
-            className="header-link" 
-            activeStyle={{
-              color: "#e9d14d"
-            }}
-          >Events</Link>
-          <Link to="/contact" 
-            className="header-link" 
-            activeStyle={{
-              color: "#e9d14d"
-            }}
-          >Contact</Link>
+          </div>
+          <div className="header-links-sub-container">
+            <Link to="/press" 
+              className="header-link" 
+              activeStyle={{
+                color: "#e9d14d"
+              }}
+            >Press</Link>
+            <Link to="/events" 
+              className="header-link" 
+              activeStyle={{
+                color: "#e9d14d"
+              }}
+            >Events</Link>
+            <Link to="/contact" 
+              className="header-link" 
+              activeStyle={{
+                color: "#e9d14d"
+              }}
+            >Contact</Link>
+          </div>
         </div>
       </nav>
     )

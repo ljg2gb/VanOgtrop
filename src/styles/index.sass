@@ -31,11 +31,6 @@ a {
     text-decoration: none;
 }
 
-// .active {
-//     font-weight: bold;
-//     color: $kvo-active-link; 
-// }
-
 nav, footer {
     padding:  1em 2em;
     display: flex;
@@ -43,6 +38,17 @@ nav, footer {
     justify-content: space-between;
     background-color: #ffffff;
 }
+
+footer {
+    @media (max-width: 600px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        p {
+            margin: 0;
+        }
+    }
+}
+
 
  button {
     background-color: white; 
@@ -103,6 +109,7 @@ nav, footer {
     align-self: center;
     @media (max-width: 600px) {
         padding: 2em 2em;
+        min-height: 66vh;
     }
     .vertical-center {
         display: flex;
@@ -149,7 +156,7 @@ nav, footer {
         }
         .media-content-left {
             display: flex;
-            padding: 1em 0;
+            padding: 0;
             @media (min-width: 600px) {
                 width: 35%;
                 padding: 0 2.5em 0 0;
@@ -158,7 +165,7 @@ nav, footer {
                 width: 50%;
                 padding: 0 .5em 0 0;
                 @media (max-width: 600px) {
-                    padding: .5em 0;
+                    padding: 0 .5em;
                 }
             }
             img {
@@ -197,6 +204,16 @@ nav, footer {
 .header-links-container {
     @media (max-width: 600px) {
         display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+        
+}
+
+.header-links-sub-container {
+    @media (max-width: 600px) {
+        display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
@@ -206,12 +223,14 @@ nav, footer {
 
 .header-link {
     font-weight: 200;
-    // color: #5486be;
     margin-left: 2em;
     margin-bottom: 0;
     text-decoration: none;
     &:active, &:hover {
         color: $kv0-active-link;
+    }
+    @media (max-width: 600px) {
+        margin-left: .7em;
     }
 }
 
