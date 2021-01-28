@@ -2,13 +2,18 @@ import React from "react";
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import Ina from '../../assets/Kristin+Ina.jpg'
+import Illustration from '../../assets/final_bw_illustrations/ChrisPorterIllustrations-07.png';
+
 
 export default function Press() {
   return (
     <div>
         <Nav/>
         <div className='main'>
-            <h1>PRESS</h1>
+        <div className="header">
+                <h1>PRESS</h1>
+                <img src={Illustration} alt="Press illustration"/>
+            </div>
             <div className= 'page-content'>
                 <div className='text-content-left'>
                     <h3><i>Random stuff, written about me:</i></h3>
@@ -19,7 +24,7 @@ export default function Press() {
                     <p><a href='https://news.darden.virginia.edu/2016/09/26/real-simple-gwib/' target="_blank" rel="noreferrer">Former Real Simple Editor Offers Darden Students Advice on Work-Life Balance</a></p>
                     <p><i>UVA Today</i></p>
                     <br/>
-                    <p><a href='https://live.washingtonpost.com/home-front-20151112.html' target="_blank" rel="noreferrer">Kristin Van Ogtrop on Surviving the Holidays</a></p>
+                    <p><a href='https://live.washingtonpost.com/home-front-20151112.html' target="_blank" rel="noreferrer">Kristin van Ogtrop on Surviving the Holidays</a></p>
                     <p><i>Washington Post</i></p>
                     <br/>
                     <p><a href='https://www.politico.com/media/story/2015/03/the-60-second-interview-kristin-van-ogtrop-editor-real-simple-003558/' target="_blank" rel="noreferrer">The 60-second interview: Kristin van Ogtrop, Editor, Real Simple</a></p>

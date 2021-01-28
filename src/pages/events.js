@@ -2,13 +2,17 @@ import React from "react";
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import Fair from '../../assets/KvO_stateFair.jpeg'
+import Illustration from '../../assets/final_bw_illustrations/ChrisPorterIllustrations-02.png';
 
 export default function Events() {
   return (
     <div>
         <Nav/>
         <div className='main'>
-            <h1>EVENTS</h1>
+            <div className="header">
+                <h1>EVENTS</h1>
+                <img src={Illustration} alt="Events illustration"/>
+            </div>
             <div className= 'page-content'>
                 <div className='text-content-left'>
                     <p>No upcoming events. Follow me on&nbsp;  

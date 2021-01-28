@@ -2,13 +2,18 @@ import React from "react";
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import Waffle from '../../assets/KvO_waffle.jpg'
+import Illustration from '../../assets/final_bw_illustrations/ChrisPorterIllustrations-05.png';
+
 
 export default function Miscellany() {
   return (
     <div>
         <Nav/>
         <div className='main'>
-            <h1>MISCELLANY</h1>
+            <div className="header">
+                <h1>MISCELLANY</h1>
+                <img src={Illustration} alt="Miscellany illustration"/>
+            </div>
             <div className= 'page-content'>
                 <div className='text-content-left'>
                     <h3><i>Random stuff, written by me:</i></h3>
