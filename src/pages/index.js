@@ -1,4 +1,5 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 import { Link } from 'gatsby';
 import '../styles/index.sass';
 import "fontsource-eb-garamond";
@@ -25,6 +26,10 @@ import Pigeon2 from '../../assets/final_bw_illustrations/ChrisPorterIllustration
 export default function Index() {
   return (
     <div className="home">
+      <Helmet>
+        <title>Kristin van Ogtrop</title>
+        <meta name="description" content="Author site for Kristin van Ogtrop" />
+      </Helmet>
       <div className="home-content">
         <div className="home-images">
           <Link to="/about" className="home-image">

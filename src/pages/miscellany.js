@@ -27,6 +27,9 @@ export default function Miscellany() {
                     <p><a href='https://www.huffpost.com/entry/lean-in-stand-up_b_2971009?guccounter=1' target="_blank" rel="noreferrer">Why I’d Rather Stand Up Straight Than Lean In</a></p>
                     <p><i>HuffPost</i></p>
                     <br/>
+                    <p><a href='https://drive.google.com/file/d/1mAMRaIny2s3htdKcbMc2X1ZZwu7y-Izv/view?usp=sharing' target="_blank" rel="noreferrer">When the Yelling Starts</a></p>
+                    <p><i>Guardian Magazine</i></p>
+                    <br/>
                     <p><a href='https://archive.vogue.com/article/1999/10/head-case' target="_blank" rel="noreferrer">Head Case</a></p>
                     <p><i>Vogue</i></p>
                     <br/>
