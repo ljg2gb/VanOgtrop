@@ -26,10 +26,12 @@ import Pigeon2 from '../../assets/final_bw_illustrations/ChrisPorterIllustration
 export default function Index() {
   return (
     <div className="home">
-      <Helmet>
-        <title>Kristin van Ogtrop</title>
-        <meta name="description" content="Author site for Kristin van Ogtrop" />
-      </Helmet>
+       <Helmet>
+          <meta charSet="utf-8" />
+          <title>Kristin van Ogtrop</title>
+          <meta name="description" content="Author site for Kristin van Ogtrop" />
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
       <div className="home-content">
         <div className="home-images">
           <Link to="/about" className="home-image">
