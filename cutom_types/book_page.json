@@ -1,0 +1,83 @@
+{
+    "Main" : {
+      "uid" : {
+        "type" : "UID",
+        "config" : {
+          "label" : "slug",
+          "placeholder" : "slug"
+        }
+      },
+      "title" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading1",
+          "label" : "title",
+          "placeholder" : "title"
+        }
+      },
+      "image" : {
+        "type" : "Image",
+        "config" : {
+          "constraint" : { },
+          "thumbnails" : [ ],
+          "label" : "image"
+        }
+      },
+      "heading_2" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading2",
+          "label" : "heading_2",
+          "placeholder" : "heading_2"
+        }
+      },
+      "buttons" : {
+        "type" : "Group",
+        "config" : {
+          "fields" : {
+            "button-text" : {
+              "type" : "StructuredText",
+              "config" : {
+                "multi" : "paragraph",
+                "label" : "button-text",
+                "placeholder" : "button-text"
+              }
+            },
+            "button-link" : {
+              "type" : "Link",
+              "config" : {
+                "label" : "button-link",
+                "placeholder" : "button-link",
+                "allowTargetBlank" : true
+              }
+            }
+          },
+          "label" : "buttons"
+        }
+      },
+      "reviews" : {
+        "type" : "Group",
+        "config" : {
+          "fields" : {
+            "review" : {
+              "type" : "StructuredText",
+              "config" : {
+                "multi" : "heading3, em",
+                "label" : "review",
+                "placeholder" : "review"
+              }
+            }
+          },
+          "label" : "Reviews"
+        }
+      },
+      "summary" : {
+        "type" : "StructuredText",
+        "config" : {
+          "multi" : "paragraph, strong, em, hyperlink, list-item, o-list-item",
+          "label" : "summary",
+          "placeholder" : "summary"
+        }
+      }
+    }
+  }

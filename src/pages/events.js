@@ -1,28 +1,27 @@
+import { graphql } from 'gatsby';
+import { RichText } from 'prismic-reactjs';
 import React from "react";
-import Nav from '../components/nav';
 import Footer from '../components/footer';
-import Fair from '../../assets/KvO_stateFair.jpeg'
-import Illustration from '../../assets/final_bw_illustrations/ChrisPorterIllustrations-02.png';
+import Nav from '../components/nav';
 
-export default function Events() {
+export const Events = ({ data }) => {
+  if (!data) return null
+  const document = data.allPrismicPage.nodes[0].data
   return (
     <div>
         <Nav/>
         <div className='main'>
             <div className="header">
-                <h1>EVENTS</h1>
-                <img src={Illustration} alt="Events illustration"/>
+                <h1>{document.title.text}</h1>
+                <img src={document.page_illustration.url} alt={document.page_illustration.alt}></img>
             </div>
             <div className= 'page-content'>
                 <div className='text-content-left'>
-                    <p>No upcoming events. Follow me on&nbsp;  
-                        <a href='https://www.facebook.com/kristinvanogtroprealsimple'>Facebook</a>,&nbsp;  
-                        <a href='https://www.instagram.com/kvanogtrop/'>Instagram</a>, or&nbsp;  
-                        <a href='https://twitter.com/kvanogtrop'>Twitter</a> for the latest happenings.</p>
-               </div>
+                  <RichText render={document.body.raw}/>
+                </div>
                 <div className='media-content-right'>
-                    <img src={Fair} alt="Winning the blue ribbon for a casserole"></img>
-                    <caption><i>Sometime in the 1970s, when I won a blue ribbon at the Delaware State Fair for a recipe that—naturally—had Campbell’s Cream of Mushroom soup in it. (See</i> Did I Say That Out Loud <i>for details.)</i></caption>
+                    <img src={document.image.url} alt={document.image.alt}></img>
+                    <caption><RichText render={document.caption.raw}/></caption>
                 </div>
             </div>
         </div>
@@ -30,3 +29,33 @@ export default function Events() {
     </div>
   )
 }
+
+export const query = graphql`
+  query EventsQuery {
+  allPrismicPage(filter: {uid: {eq: "events"}}) {
+    nodes {
+      uid
+      data {
+        title {
+          text
+        }
+        body {
+          raw
+        }
+        caption {
+          raw
+        }
+        image {
+          alt
+          url
+        }
+        page_illustration {
+          alt
+          url
+        }
+      }
+    }
+  }
+}`
+
+export default Events

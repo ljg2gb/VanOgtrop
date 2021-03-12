@@ -11,8 +11,8 @@
         "type" : "StructuredText",
         "config" : {
           "single" : "heading1",
-          "label" : "Title",
-          "placeholder" : "Title"
+          "label" : "title",
+          "placeholder" : "title"
         }
       },
       "page_illustration" : {
@@ -20,32 +20,32 @@
         "config" : {
           "constraint" : { },
           "thumbnails" : [ ],
-          "label" : "page illustration"
+          "label" : "page_illustration"
         }
       },
-      "body" : {
-        "type" : "StructuredText",
-        "config" : {
-          "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
-          "label" : "Body",
-          "placeholder" : "Body"
-        }
-      },
-      "image" : {
+      "book_cover1" : {
         "type" : "Image",
         "config" : {
           "constraint" : { },
           "thumbnails" : [ ],
-          "label" : "Image"
+          "label" : "book_cover1"
         }
       },
-      "caption" : {
+      "book_cover2" : {
+        "type" : "Image",
+        "config" : {
+          "constraint" : { },
+          "thumbnails" : [ ],
+          "label" : "book_cover2"
+        }
+      },
+      "quote" : {
         "type" : "StructuredText",
         "config" : {
-          "multi" : "paragraph, strong, em, hyperlink",
-          "label" : "caption",
-          "placeholder" : "caption"
+          "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+          "label" : "Quote",
+          "placeholder" : "quote"
         }
       }
     }
-}
+  }

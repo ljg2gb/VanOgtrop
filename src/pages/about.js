@@ -1,28 +1,29 @@
+import { graphql } from 'gatsby';
+import { RichText } from 'prismic-reactjs';
 import React from "react";
-import Nav from '../components/nav';
 import Footer from '../components/footer';
-import schoolPhoto from '../../assets/KvO_school_photo.jpeg'
-import Illustration from '../../assets/final_bw_illustrations/ChrisPorterIllustrations-06.png';
+import Nav from '../components/nav';
 
-export default function About() {
+
+export const About = ({ data }) => {
+  if (!data) return null
+  const document = data.allPrismicPage.nodes[0].data
+
   return (
     <div>
         <Nav/>
         <div className='main'>
-            <div className="header">
-                <h1>ABOUT</h1>
-                <img src={Illustration} alt="About"/>
+        <div className="header">
+                <h1>{document.title.text}</h1>
+                <img src={document.page_illustration.url} alt={document.page_illustration.alt}></img>
             </div>
             <div className= 'page-content'>
                 <div className='text-content-left'>
-                    <h3>Officially, as in careerish stuff:</h3>
-                    <p>After getting my B.A. in English from the University of Virginia and my M.A. in English from Columbia University, I began working in magazines as an assistant to the managing editor of <i>Vogue</i>.  I subsequently worked at <i>Premiere</i>, <i>Travel & Leisure</i>, <i>Vogue</i> (again) and <i>Glamour</i>. In 2003, I was named editor in chief of <i>Real Simple</i>, a job I held until 2016.  Along the way I wrote for various publications, contributed essays to the books <i>Child of Mine</i> and <i>The Bitch in the House</i>, wrote "The Amateur" column for <i>Time</i> and the book <i>Just Let Me Lie Down:  Necessary Terms for the Half-Insane Working Mom</i>.  In 2018, I began a new career as a literary agent at InkWell Management.</p>
-                    <br/>
-                    <h3>Unofficially:</h3>
-                    <p>I grew up in Delaware and sort of wish I still lived there.  I am allergic to penicillin.  I never had any wisdom teeth.  If I could only eat one food for the rest of my life, it would be potato chips.  Or maybe french fries.  Hopefully I’ll never have to choose.</p>
-                </div>
+                    <RichText render={document.body.raw}/>
+               </div>
                 <div className='media-content-right'>
-                    <img src={schoolPhoto} alt='school photo of Kristin van Ogtrop'></img>
+                    <img src={document.image.url} alt={document.image.alt}></img>
+                    <caption><RichText render={document.caption.raw}/></caption>
                 </div>
             </div>
         </div>
@@ -30,3 +31,33 @@ export default function About() {
     </div>
   )
 }
+
+export const query = graphql`
+  query AboutQuery {
+  allPrismicPage(filter: {uid: {eq: "about"}}) {
+    nodes {
+      uid
+      data {
+        title {
+          text
+        }
+        body {
+          raw
+        }
+        caption {
+          raw
+        }
+        image {
+          alt
+          url
+        }
+        page_illustration {
+          alt
+          url
+        }
+      }
+    }
+  }
+}`
+
+export default About

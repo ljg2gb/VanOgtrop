@@ -1,3 +1,7 @@
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// })
+
 module.exports = {
   siteMetadata: {
     title: `Kristin van Ogtrop`,
@@ -10,10 +14,15 @@ module.exports = {
     {
       resolve: "gatsby-source-prismic",
       options: {
-        repositoryName: "KristinvanOgtrop",
-        linkResolver: () => (doc) => linkResolver(doc),
+        repositoryName: 'kvowebsite',
+        // linkResolver: () => (doc) => linkResolver(doc),
         schemas: {
-          page: require('./custom_types/page.json')
+          page: require('./cutom_types/page.json'),
+          nav: require('./cutom_types/nav.json'),
+          footer: require('./cutom_types/footer.json'),
+          contact: require('./cutom_types/contact.json'),
+          books: require('./cutom_types/books.json'),
+          book_page: require('./cutom_types/book_page.json')
         },
       }
     }

@@ -1,0 +1,36 @@
+{
+    "Main" : {
+      "credits" : {
+        "type" : "StructuredText",
+        "config" : {
+          "multi" : "paragraph, strong, em",
+          "label" : "credits",
+          "placeholder" : "credits"
+        }
+      },
+      "link_1" : {
+        "type" : "Link",
+        "config" : {
+          "label" : "link_1",
+          "placeholder" : "link_1",
+          "allowTargetBlank" : true
+        }
+      },
+      "link_2" : {
+        "type" : "Link",
+        "config" : {
+          "label" : "link_2",
+          "placeholder" : "link_2",
+          "allowTargetBlank" : true
+        }
+      },
+      "link_3" : {
+        "type" : "Link",
+        "config" : {
+          "label" : "link_3",
+          "placeholder" : "link_3",
+          "allowTargetBlank" : true
+        }
+      }
+    }
+  }
