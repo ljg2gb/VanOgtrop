@@ -22,7 +22,7 @@ module.exports = {
           footer: require('./cutom_types/footer.json'),
           contact: require('./cutom_types/contact.json'),
           books: require('./cutom_types/books.json'),
-          book_page: require('./cutom_types/book_page.json')
+          "book_page": require('./cutom_types/book_page.json')
         },
       }
     }
