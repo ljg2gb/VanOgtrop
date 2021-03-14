@@ -1,33 +1,31 @@
 import React from "react";
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
+import { RichText } from 'prismic-reactjs';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
-import JustLetMe from '../../assets/JustLetMe.jpg'
-import DidISayThatOutloud from '../../assets/DidISayThatOutloud.jpg'
-import Illustration from '../../assets/final_bw_illustrations/ChrisPorterIllustrations-04.png';
 
-export default function Books() {
+export const Books = ({data}) => {
+  if (!data) return null
+  const document = data.prismicBooks.data
   return (
     <div>
         <Nav/>
         <div className='main'>
             <div className="header">
-                <h1>BOOKS</h1>
-                <img src={Illustration} alt="Books illustration"/>
+                <h1>{document.title.text}</h1>
+                <img src={document.page_illustration.url} alt={document.page_illustration.alt}/>
             </div>
             <div className="page-content vertical-center">
             <div className='media-content-left book-covers'>
                 <Link to="/JustLetMe" className="book-cover">
-                    <img src={JustLetMe} alt="Book cover: Just Let Me Lie Down" className="book-hover"></img>
+                    <img src={document.book_cover1.url} alt={document.book_cover1.alt} className="book-hover"></img>
                 </Link>
                 <Link to="/DidISayThatOutLoud" className="book-cover">
-                    <img src={DidISayThatOutloud} alt="Book cover: Did I Say That Outloud?" className="book-hover"></img>
+                    <img src={document.book_cover2.url} alt={document.book_cover2.alt} className="book-hover"></img>
                 </Link>
             </div>
             <div className='text-content-right'>
-                <h2 className="large-quote"><i>“Van Ogtrop nails with a generous, wisecracking charm what we couldn’t <span>&#8208;</span>even with sleep<span>&#8208;</span> articulate.”
-                <span>&nbsp; &#8208;</span>Elissa Schappell,</i> Vanity Fair
-                </h2>
+              <h2 className="large-quote"><RichText render={document.quote.raw}/></h2>
             </div>
             </div>
         </div>
@@ -35,3 +33,32 @@ export default function Books() {
     </div>
   )
 }
+
+export const query = graphql`
+  query NavQuery {
+    prismicBooks {
+      data {
+        title {
+          text
+        }
+        page_illustration {
+          alt
+          url
+        }
+        book_cover1 {
+          alt
+          url
+        }
+        book_cover2 {
+          alt
+          url
+        }
+        quote {
+          raw
+        }
+      }
+    }
+  }
+`
+
+export default Books;
