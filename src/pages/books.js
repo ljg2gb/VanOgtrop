@@ -35,7 +35,7 @@ export const Books = ({data}) => {
 }
 
 export const query = graphql`
-  query NavQuery {
+  query BooksQuery {
     prismicBooks {
       data {
         title {

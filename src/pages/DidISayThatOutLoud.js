@@ -55,6 +55,7 @@ export const DidISayThatOutLoud = ({data}) => {
                   </button>
                   <button>
                     <a href={document.buttons[4].buttonlink.url} 
+                        className="button-text"
                         target="_blank" 
                         rel="noreferrer">
                         {document.buttons[4].buttontext.text} 
