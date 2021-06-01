@@ -21,54 +21,54 @@ export const DidISayThatOutLoud = ({data}) => {
               <div className='text-content-right'>
                 <h2>{document.heading_2.text}</h2>
                 <div>
-                  <button>
-                    <a href={document.buttons[0].buttonlink.url}  
-                        className="button-text"
-                        target="_blank" 
-                        rel="noreferrer">
-                        {document.buttons[0].buttontext.text}
-                    </a>
-                  </button>
-                  <button>
-                    <a href={document.buttons[1].buttonlink.url} 
-                        className="button-text"
-                        target="_blank" 
-                        rel="noreferrer">
-                        {document.buttons[1].buttontext.text} 
-                    </a>
-                  </button>
-                  <button>
-                    <a href={document.buttons[2].buttonlink.url} 
-                        className="button-text"
-                        target="_blank" 
-                        rel="noreferrer">
-                        {document.buttons[2].buttontext.text} 
-                    </a>
-                  </button>
-                  <button>
-                    <a href={document.buttons[3].buttonlink.url}   
-                        className="button-text"
-                        target="_blank" 
-                        rel="noreferrer">
-                        {document.buttons[3].buttontext.text} 
-                    </a>
-                  </button>
-                  <button>
-                    <a href={document.buttons[4].buttonlink.url} 
-                        className="button-text"
-                        target="_blank" 
-                        rel="noreferrer">
-                        {document.buttons[4].buttontext.text} 
-                    </a>
-                  </button>
-                  <button>
-                    <a href={document.buttons[5].buttonlink.url} 
-                        className="button-text"
-                        target="_blank" 
-                        rel="noreferrer">
-                        {document.buttons[5].buttontext.text} 
-                    </a>
-                  </button>
+                  <a href={document.buttons[0].buttonlink.url}  
+                      className="button-text"
+                      target="_blank" 
+                      rel="noreferrer">
+                    <button>
+                      {document.buttons[0].buttontext.text}
+                    </button>
+                  </a>
+                  <a href={document.buttons[1].buttonlink.url}  
+                      className="button-text"
+                      target="_blank" 
+                      rel="noreferrer">
+                    <button>
+                      {document.buttons[1].buttontext.text}
+                    </button>
+                  </a>
+                  <a href={document.buttons[2].buttonlink.url}  
+                      className="button-text"
+                      target="_blank" 
+                      rel="noreferrer">
+                    <button>
+                      {document.buttons[2].buttontext.text}
+                    </button>
+                  </a>
+                  <a href={document.buttons[3].buttonlink.url}  
+                      className="button-text"
+                      target="_blank" 
+                      rel="noreferrer">
+                    <button>
+                      {document.buttons[3].buttontext.text}
+                    </button>
+                  </a>
+                  <a href={document.buttons[4].buttonlink.url}  
+                      className="button-text"
+                      target="_blank" 
+                      rel="noreferrer">
+                    <button>
+                      {document.buttons[4].buttontext.text}
+                    </button>
+                  </a>
+                  <a href={document.buttons[5].buttonlink.url}  
+                      className="button-text"
+                      target="_blank" 
+                      rel="noreferrer">
+                    <button>
+                      {document.buttons[5].buttontext.text}
+                    </button>
+                  </a>
                 </div>
                 <br/>
                 <RichText render={document.reviews[0].review.raw}/>
